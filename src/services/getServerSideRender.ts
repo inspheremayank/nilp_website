@@ -11,6 +11,7 @@ const headers = {
 };
 
 export async function getRequestServerSide(params: any, language?: any) {
+  console.log('ss', `${API_URL}${params}`)
   try {
     const url = `${API_URL}${params}`;
     const res = await fetch(url, {
