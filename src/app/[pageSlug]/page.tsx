@@ -74,7 +74,7 @@ export default async function Page({ params }: any) {
   const pageData = await getData(params);
   return (
     <>
-      {/* {pageData.slug != 'home' && <InnerBanner pageData={pageData} />} */}
+      {pageData.slug != 'home' && <InnerBanner pageData={pageData} />}
       <PageWrapper pageData={pageData} />
     </>
   );

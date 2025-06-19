@@ -51,7 +51,7 @@ export default async function RootLayout({
                 <ErrorBoundary>
                 {children}
                 </ErrorBoundary>
-                {/* <Footer /> */}
+                <Footer />
               </ThemeProvider>
             </AppContextProvider>
           </NextIntlClientProvider>
