@@ -1,4 +1,4 @@
-export const API_URL = 'http://localhost:3000'
+export const API_URL = 'https://ullas.education.gov.in'
 export const CLIENT_URL = ''
 export const API_TOKEN = 'qXLIZrYCWktaQfHW2VTiHUcvffhR8HfU4LKfFOkF'
 export const API_NETWORK_GUID = 'a24fe645-b80d-44dd-9dac-40c6d86eb879'
