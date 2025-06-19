@@ -46,13 +46,12 @@ export default async function RootLayout({
                 enableSystem
                 disableTransitionOnChange
               >
-                {/* <Accessibility /> */}
-                <Header />
+                <Accessibility />
+                {/* <Header /> */}
+                <ErrorBoundary>
                 {children}
-                {/* <ErrorBoundary>
-                
                 </ErrorBoundary>
-                <Footer /> */}
+                <Footer />
               </ThemeProvider>
             </AppContextProvider>
           </NextIntlClientProvider>
