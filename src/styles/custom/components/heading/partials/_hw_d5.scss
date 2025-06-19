@@ -1,0 +1,39 @@
+.hw {
+  $self: &;
+  &.d5 {
+    #{$self} {
+      &__title {
+        font-size: $font30;
+        @include fontBase(var(--fontMedium), var(--font-secondary));
+        color: var(--white);
+        text-decoration: underline;
+
+        @include mq(tablet) {
+          font-size: $font34;
+        }
+
+        @include mq(desktop-wide) {
+          font-size: $font40;
+        }
+      }
+    }
+
+    &.reverse {
+      #{$self} {
+        &__title {
+          color: var(--themeTextSecondary);
+          text-decoration: none;
+          line-height: 1.6;
+        }
+      }
+    }
+
+    &.semiBold {
+      #{$self} {
+        &__title {
+          @include fontBase(var(--fontBold), var(--font-secondary));
+        }
+      }
+    }
+  }
+}

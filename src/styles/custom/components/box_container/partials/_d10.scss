@@ -1,0 +1,59 @@
+.c-boxContainer {
+  $self: &;
+  &.d10 {
+    @include flexbox;
+    @include justify-content(center);
+  }
+}
+
+.about-box {
+  @include flexbox;
+  @include flex-direction(column, vertical);
+  @include justify-content(center);
+
+  @include mq(tablet) {
+    @include flexbox;
+    @include flex-direction(row, horizontal);
+    @include justify-content(center);
+  }
+}
+
+.box-content {
+  @include flexbox;
+  @include flex-direction(column, vertical);
+  @include align-items(center);
+
+  &-item {
+    @include border-radius(20px);
+    @include flexbox;
+    @include flex-direction(column,vertical);
+    @include justify-content(center);
+    @include align-items(center);
+    font-size: $font14;
+    text-align: center;
+    margin: 10px;
+    color: var(--black);
+    min-height: 150px;
+    width: 100%;
+    padding: 20px 25px;
+  
+    @include mq(tablet) {
+      width: calc(100% / 3 - 20px);
+    }
+  }
+
+  &.d2 {
+    .box-content {
+      &-item {
+        @include justify-content(flex-start);
+      }
+    }
+  }
+}
+
+.bg-grey {
+  background: var(--grey1);
+  padding: 10px 20px;
+  @include border-radius(12px);
+  margin-bottom: 20px;
+}

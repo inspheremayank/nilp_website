@@ -1,0 +1,27 @@
+.gc {
+  $self: &;
+  &.d4 {
+    #{$self} {
+      &__content {
+        font-size: $font14;
+        line-height: 1.6;
+        text-align: justify;
+        @include fontBase(var(--fontSemiBold));
+        color: var(--themeTextSecondary);
+
+        @include mq(tablet) {
+          font-size: $font16;
+        }
+
+        @include mq(desktop-min) {
+          font-size: $font16;
+        }
+      }
+     
+    }
+    a{
+      color: var(--themePrimaryColor) !important;
+    }
+    
+  }
+}

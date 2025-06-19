@@ -1,0 +1,32 @@
+.gc {
+  $self: &;
+  &.d1 {
+    #{$self} {
+      &__content {
+        font-size: $font16;
+        line-height: 1.6;
+        text-align: justify;
+        @include fontBase(var(--fontRegular));
+        color: var(--black3);
+
+        @include mq(tablet) {
+          font-size: $font18;
+        }
+
+        @include mq(desktop-min) {
+          font-size: $font18;
+        }
+      }
+      &__bold{
+        @include fontBase(var(--fontMedium));
+      }
+     
+    }
+    span{
+      padding-right: 10px;
+      @include fontBase(var(--fontSemiBold));
+
+    }
+  }
+ 
+}

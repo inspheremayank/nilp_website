@@ -1,0 +1,44 @@
+.u-listView {
+    $self: &;
+    &.d6 {
+      > ul {
+        padding-left: 15px;
+        > li {
+          list-style-type: disc !important;
+          position: relative;
+          font-size: $font20;
+          text-align: justify;
+          @include fontBase(var(--fontRegular));
+          color: var(--black3);
+          line-height: 1.7;
+
+          img{
+            max-width: 250px;
+          }
+  
+          ul {
+            li {
+              list-style-type: disc;
+              font-size: $font20;
+              @include fontBase(var(--fontRegular));
+              color: var(--black3);
+              line-height: 1.9;
+              text-align: justify;
+  
+              @include mq(tablet) {
+                font-size: $font20;
+              }
+  
+              @include mq(desktop-min) {
+                font-size: $font22;
+              }
+             &:first-child{
+              list-style: none;
+             }
+            }
+          }
+        }
+      }
+    }
+  }
+  

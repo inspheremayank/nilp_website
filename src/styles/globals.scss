@@ -1,0 +1,331 @@
+@charset "utf-8";
+@import 'vendors/bootstrap.min';
+/* Begin core files */
+@import 'custom/core/variables';
+@import 'custom/core/mixins';
+@import 'custom/core/typography';
+/* End core files */
+
+/* Begin layout files */
+@import 'custom/layouts/header';
+@import 'custom/layouts/footer';
+/* End layout files */
+
+/* Begin Components files */
+@import 'custom/components/basic';
+@import 'custom/components/button';
+@import 'custom/components/shadows';
+@import 'custom/components/margin_padding/margin_padding';
+@import 'custom/components/heading/heading';
+@import 'custom/components/generic_content/gc';
+@import 'custom/components/loader';
+
+@import 'custom/components/navigation';
+@import 'custom/components/banner';
+@import 'custom/components/inner_banner';
+@import 'custom/components/breadcumb';
+@import 'custom/components/cards/cards';
+@import 'custom/components/box_container/box_container';
+@import 'custom/components/list_view/list_view';
+@import 'custom/components/mesnary';
+@import 'custom/components/tabs/tabs';
+@import 'custom/components/table/table';
+@import 'custom/components/form/form';
+@import 'custom/components/accessability';
+@import 'custom/components/switch';
+@import 'custom/components/auth_instructions';
+
+/* End Components files */
+
+/* Begin Elements files */
+@import 'custom/components/elements/elements';
+/* End Elements files */
+
+/* Begin admin files */
+@import 'custom/admin/admin';
+/* End admin files */
+
+
+
+.map_circle {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background-color: #ff4200;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.map_circle:after {
+  content: ' ';
+}
+
+@include mq('desktop-min') {
+  .map_circle:after {
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ff4200;
+    border: #ff4200;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    -webkit-animation-name: 'ripple';
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    left: 2px;
+    top: 2px;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    left: -8px;
+    top: -8px;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.tooltip {
+  z-index: 999;
+  position: relative;
+  background-color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.c-stats_wrapper {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+  height: 500px;
+
+  &_container {
+    position: relative;
+    width: 120px;
+    height: 105px;
+    @include mq(desktop) {
+      width: 180px;
+      height: 155px;
+    }
+  }
+  &_item {
+    position: absolute;
+    @include transition(all 0.3s ease);
+
+    &_icon {
+      svg {
+        width: 120px;
+        height: 105px;
+        @include mq(desktop) {
+          width: 180px;
+          height: 155px;
+        }
+      }
+    }
+    &_content {
+      position: absolute;
+      @include size(100%);
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      @include flex-direction(column, vertical);
+      padding: 20px;
+      text-align: center;
+
+      .count {
+        color: var(--white);
+        font-size: $font16;
+        @include fontBase(var(--fontSemiBold));
+        margin-bottom: 0;
+        @include mq(desktop) {
+          font-size: $font22;
+        }
+      }
+      .label {
+        color: var(--white);
+        font-size: $font14;
+        @include fontBase(var(--fontMedium));
+        margin-bottom: 0;
+        line-height: 1.2;
+
+        @include mq(desktop) {
+          font-size: $font18;
+        }
+      }
+    }
+    &.item_1 {
+      left: -77%;
+      top: -49%;
+
+      .c-stats_wrapper_item_icon {
+        svg,
+        svg * {
+          fill: #01568b;
+        }
+      }
+    }
+    &.item_2 {
+      left: 0;
+      top: -99%;
+
+      .c-stats_wrapper_item_icon {
+        svg,
+        svg * {
+          fill: #006eb0;
+        }
+      }
+    }
+    &.item_3 {
+      left: 77%;
+      top: -49%;
+
+      .c-stats_wrapper_item_icon {
+        svg,
+        svg * {
+          fill: #0580c7cc;
+        }
+      }
+    }
+    &.item_4 {
+      left: 77%;
+      top: 54%;
+
+      .c-stats_wrapper_item {
+        &_icon {
+          svg,
+          svg * {
+            fill: #78bae1;
+          }
+        }
+
+        &_content {
+          .count,
+          .label {
+            color: var(--black);
+          }
+        }
+      }
+    }
+    &.item_5 {
+      left: 0;
+      top: 105%;
+
+      .c-stats_wrapper_item {
+        &_icon {
+          svg,
+          svg * {
+            fill: #cce5f4;
+          }
+        }
+
+        &_content {
+          .count,
+          .label {
+            color: var(--black);
+          }
+        }
+      }
+    }
+    &.item_6 {
+      left: -77%;
+      top: 54%;
+
+      .c-stats_wrapper_item {
+        &_icon {
+          svg,
+          svg * {
+            fill: #cfe6f5;
+          }
+        }
+        &_content {
+          .count,
+          .label {
+            color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.customModal {
+
+    // position: relative;
+    &.backdorp {
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba($color: #000000, $alpha: .5);
+        }
+    }
+
+    &.fadeIn {
+        animation: fadeIn 0.3s forwards;
+    }
+
+    &.fadeOut {
+        animation: fadeOut 0.3s forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+}
+
+.alertModal {
+    .modal-dialog {
+        .modal-content {
+            background-color: transparent;
+            max-width: 1080px;
+
+            .modal-body {
+                position: relative;
+                padding: 0;
+                text-align: center;
+
+                .modalClosebtn {
+                    background-color: transparent;
+                    padding: 0;
+                    border: 1px solid #2e2e2e;
+                    position: absolute;
+                    right: 15px;
+                    top: 10px;
+                    border-radius: 5px;
+                    svg {
+                      fill: #2e2e2e;
+                    }
+                }
+            }
+        }
+    }
+}

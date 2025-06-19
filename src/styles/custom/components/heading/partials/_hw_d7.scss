@@ -1,0 +1,36 @@
+.hw {
+  $self: &;
+  &.d7 {
+    #{$self} {
+      &__title {
+        font-size: $font20;
+        @include fontBase(var(--fontBold), var(--font-secondary));
+        color: var(--themeTextSecondary);
+        margin-bottom: 0;
+
+        @include mq(tablet) {
+          font-size: $font22;
+        }
+
+        @include mq(desktop-wide) {
+          font-size: $font36;
+        }
+      }
+      &__error {
+        font-size: $font20;
+        @include fontBase(var(--fontSemiBold), var(--font-secondary));
+        color: var(--themeLightShade);
+        margin-bottom: 0;
+        margin-top: 20px;
+
+        @include mq(tablet) {
+          font-size: $font22;
+        }
+
+        @include mq(desktop-wide) {
+          font-size: $font36;
+        }
+      }
+    }
+  }
+}

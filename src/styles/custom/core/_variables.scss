@@ -1,0 +1,488 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src:
+    url('/nilp/fonts/NotoSans-Regular.woff2') format('woff2'),
+    url('/nilp/fonts/NotoSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src:
+    url('/nilp/fonts/NotoSans-Black.woff2') format('woff2'),
+    url('/nilp/fonts/NotoSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src:
+    url('/nilp/fonts/NotoSans-Light.woff2') format('woff2'),
+    url('/nilp/fonts/NotoSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src:
+    url('/nilp/fonts/NotoSans-Bold.woff2') format('woff2'),
+    url('/nilp/fonts/NotoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src:
+    url('/nilp/fonts/NotoSans-Medium.woff2') format('woff2'),
+    url('/nilp/fonts/NotoSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src:
+    url('/nilp/fonts/NotoSans-SemiBold.woff2') format('woff2'),
+    url('/nilp/fonts/NotoSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src:
+    url('/nilp/fonts/WorkSans-Bold.woff2') format('woff2'),
+    url('/nilp/fonts/WorkSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src:
+    url('/nilp/fonts/WorkSans-Black.woff2') format('woff2'),
+    url('/nilp/fonts/WorkSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src:
+    url('/nilp/fonts/WorkSans-Light.woff2') format('woff2'),
+    url('/nilp/fonts/WorkSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src:
+    url('/nilp/fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('/nilp/fonts/WorkSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src:
+    url('/nilp/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('/nilp/fonts/WorkSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src:
+    url('/nilp/fonts/WorkSans-Medium.woff2') format('woff2'),
+    url('/nilp/fonts/WorkSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  --black: #333333;
+  --black3: #333333;
+  --grey3: #666666;
+  --grey5: #e4eaf8;
+  --grey6: #f6f6f6;
+  --grey9: #f3f3f3;
+  --orange: #f16f1d;
+  --orange9: #f38332;
+  --orange9White: #f38332;
+  --white: #ffffff;
+  --whiteBlack:#ffffff;
+  --blackWhite: #333333;
+  --blackYellow:#333333;
+  --themeDarkShade: var(--black3);
+  --themePrimary: #057fc7;
+  --themePrimaryBorder: #057fc7;
+  --themePrimaryBg: #057fc7;
+  --themePrimaryDarkBg: #057fc7;
+  --themePrimaryLight: rgba(5, 127, 199, 0.1);
+  --themeTextColor: var(--black3);
+  --bgTheme: #ffebbf;
+  --themeWhite: #ffffff;
+  --themePrimaryColor: #057fc7;
+  --themeDarkWhite: var(--white);
+  --primaryType1: #0e8cd7;
+  --primaryType2: #0074b8;
+  --primaryType3:#4cbafa;
+  --primaryType4:#6bc7fd;
+  --primaryType5:#88d1fc;
+  --linearGradientTheme1: linear-gradient(
+    128deg,
+    rgba(8, 143, 223, 1) 0%,
+    rgba(0, 119, 189, 1) 100%
+  );
+  --linearGradientTheme2: linear-gradient(
+    128deg,
+    rgba(240, 116, 36, 1) 0%,
+    rgba(255, 145, 74, 1) 100%
+  );
+  --linearGradientTheme3: linear-gradient(
+    180deg,
+    rgba(128, 208, 255, 1) 0%,
+    rgba(255, 212, 119, 1) 100%
+  );
+  --linearGradientTheme4: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.02) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  --linearGradientTheme5: linear-gradient(
+    180deg,
+    rgba(128, 208, 255, 1) 0%,
+    rgba(255, 212, 119, 1) 65%
+  );
+  --themeTextTertiary: var(--grey3);
+  --whiteYellow: var(--white);
+  --themeTextSecondary: var(--black3);
+  --linearGradientTheme1Border: var(--linearGradientTheme1);
+  --arrowIcon: url('/nilp/images/icons/arrow_black_right.svg');
+  background-color: #ffffff;
+  --widthMedia1920: 1728px;
+  --widthMedia1536: 1280px;
+  --widthMedia1024: 1140px;
+  --baseBlack: 0, 0, 0;
+  --baseWhite: 255, 255, 255;
+  --black: rgb(var(--baseBlack));
+  --white: #ffffff;
+  --black2: #191e28;
+
+  --blue: #05111f;
+  --grey: #efefef;
+  --grey1: #efefef;
+  --grey2: #a6a8b4;
+
+  --grey4: #e9e9e9;
+
+  --grey7: #e2e2e2;
+  --grey8: #d6d6d6;
+  --grey10: #bbbbbb;
+  --orange: #f16f1d;
+  --orange2: #ff6600;
+  --orange3: #fffaea;
+  --orange4: #ffefbf;
+  --orange5: #ffa826;
+  --orange6: #ffbc5c;
+  --orange7: #f8c58f;
+  --orange8: #ffefbf;
+
+  --orange10: #ff924b;
+  --orange11: #f4bc34;
+  --orange12: 255, 190, 133;
+  --purple1: #efd8f8;
+  --pink1: #f8d8e7;
+  --baseThemeSecondary: 0, 102, 0;
+  --themeSecondary: rgb(var(--baseThemeSecondary));
+  --themeTertiary: #8dd1d3;
+  --themeDarkShade: #333333;
+  --themeLightShade: #006600;
+  --themeTextPrimary: var(--grey);
+  --green:#5DA828;
+
+  --themeClr1: #8dd1d3;
+  --themeClr2: #f2fbff;
+  --themeTertiaryDark: #237ef2;
+  --themeTertiaryLight: #237ef21a;
+  --red: #ff0000;
+  --redBg: #ff0000;
+  --fb: #e9f3fe;
+  --greenLight: rgba(42, 114, 11, 0.362);
+  --whiteLight: #ffffff61;
+  --whiteBg: #ffffff;
+  --themeBlue:#4090D0;
+  --themeBorder1: #e5e5f4;
+
+  --font-primary: 'Noto Sans';
+  --font-secondary: 'Work Sans';
+  --fontThin: 100;
+  --fontLight: 300;
+  --fontRegular: normal;
+  --fontMedium: 500;
+  --fontSemiBold: 600;
+  --fontBold: bold;
+  --fontBolder: 900;
+
+  --fontSize10: 10px;
+  --fontSize12: 12px;
+  --fontSize14: 14px;
+  --fontSize15: 15px;
+  --fontSize16: 16px;
+  --fontSize18: 18px;
+  --fontSize20: 20px;
+  --fontSize22: 22px;
+  --fontSize24: 24px;
+  --fontSize25: 25px;
+  --fontSize26: 26px;
+  --fontSize28: 28px;
+  --fontSize30: 30px;
+  --fontSize32: 32px;
+  --fontSize34: 34px;
+  --fontSize36: 36px;
+  --fontSize40: 40px;
+  --fontSize45: 45px;
+  --fontSize46: 46px;
+  --fontSize52: 52px;
+  --fontSize68: 68px;
+  --fontSize72: 72px;
+  --fontSize80: 80px;
+}
+
+$font10: var(--fontSize10);
+$font12: var(--fontSize12);
+$font14: var(--fontSize14);
+$font15: var(--fontSize15);
+$font16: var(--fontSize16);
+$font18: var(--fontSize18);
+$font20: var(--fontSize20);
+$font22: var(--fontSize22);
+$font24: var(--fontSize24);
+$font25: var(--fontSize25);
+$font26: var(--fontSize26);
+$font28: var(--fontSize28);
+$font30: var(--fontSize30);
+$font32: var(--fontSize32);
+$font34: var(--fontSize34);
+$font36: var(--fontSize36);
+$font40: var(--fontSize40);
+$font42: var(--fontSize42);
+$font45: var(--fontSize45);
+$font46: var(--fontSize46);
+$font52: var(--fontSize52);
+$font68: var(--fontSize68);
+$font72: var(--fontSize72);
+$font80: var(--fontSize80);
+
+.dark body {
+  --black: #333333;
+  --black3: #ffffff;
+  --grey3: #666666;
+  --grey5: #e4eaf8;
+  --grey6: #f6f6f6;
+  --grey9: #f3f3f3;
+  --orange: #ffffff;
+  --orange9: #000000;
+  --orange9White: #ffffff;
+  --white: #ffffff;
+  --whiteBlack:#121212;
+  --blackWhite: #ffffff;
+  --blackYellow:#ffff00;
+  --themeDarkShade: #444343;
+  --themePrimary: #057fc7;
+  --themePrimaryLight: #444343;
+  --grey9: #333333;
+  --orange10: #ff924b;
+  --orange11: #f4bc34;
+  --green:#5DA828;
+  --bgTheme: #333333;
+  --themeWhite: #333333;
+  --themePrimaryColor: #ffff00;
+  --themePrimaryBorder: #ffffff;
+  --themeTextColor: var(--black3);
+  --primaryType1: var(--grey3);
+  --primaryType2: #333333;
+  --primaryType3:#333333;
+  --primaryType4:#484848;
+  --primaryType5:#727272;
+
+  --linearGradientTheme1: #444343;
+  --linearGradientTheme2: #444343;
+  --linearGradientTheme3: #444343;
+  --linearGradientTheme4: #444343;
+  --linearGradientTheme5: #444343;
+  --arrowIcon: url('/nilp/images/icons/arrow_white_right.svg');
+  --themeTextTertiary: #ffff00;
+  --whiteYellow: #ffff00;
+  --themeTextSecondary: #ffff00;
+  --linearGradientTheme1Border: #ffff00;
+
+  color: #ffff00;
+  background: #333333;
+  --baseBlack: 0, 0, 0;
+  --baseWhite: #000000;
+  --whiteBg: #000000;
+  --themeDarkWhite: #000000;
+  --black: rgb(var(--baseBlack));
+  --white: #ffffff;
+  --black2: #191e28;
+
+  --blue: #05111f;
+  --grey: #000000;
+  --grey1: #ffffff;
+  --grey2: #a6a8b4;
+
+  --grey4: #e9e9e9;
+  --grey5: #333333;
+  --grey6: #333333;
+  --grey7: #e2e2e2;
+  --grey8: #d6d6d6;
+  --grey10: #bbbbbb;
+  --orange: #ffff00;
+  --orange2: #ff6600;
+  --orange3: #fffaea;
+  --orange4: #ffefbf;
+  --orange5: #ffa826;
+  --orange6: #ffbc5c;
+  --orange7: #f8c58f;
+  --orange8: #333333;
+  --baseThemeSecondary: 0, 102, 0;
+  --themeSecondary: rgb(var(--baseThemeSecondary));
+  --themeTertiary: #8dd1d3;
+  --themeLightShade: #006600;
+  --themeTextPrimary: var(--grey);
+  --themeTextTertiary: #ffff00;
+  --themeClr1: #8dd1d3;
+  --themeClr2: #333333;
+  --themeTertiaryDark: #000000;
+  --themeTertiaryLight: #237ef21a;
+  --red: #ffffff;
+  --redBg:#000000;
+  --fb: #333333;
+  --greenLight: rgba(42, 114, 11, 0.32);
+  --themePrimaryBg: #4b4848;
+  --themePrimaryDarkBg: #000000;
+  --whiteLight: #333333;
+  --themeBlue:#000000;
+
+}
+
+.font_decrease_1 {
+  --fontSize10: 9px;
+  --fontSize12: 11px;
+  --fontSize14: 13px;
+  --fontSize15: 14px;
+  --fontSize16: 15px;
+  --fontSize18: 17px;
+  --fontSize20: 19px;
+  --fontSize22: 21px;
+  --fontSize24: 23px;
+  --fontSize25: 24px;
+  --fontSize26: 25px;
+  --fontSize28: 27px;
+  --fontSize30: 29px;
+  --fontSize32: 31px;
+  --fontSize34: 33px;
+  --fontSize36: 35px;
+  --fontSize40: 39px;
+  --fontSize45: 44px;
+  --fontSize46: 45px;
+  --fontSize52: 51px;
+  --fontSize68: 67px;
+  --fontSize72: 71px;
+  --fontSize80: 79px;
+}
+.font_decrease_2 {
+  --fontSize10: 8px;
+  --fontSize12: 10px;
+  --fontSize14: 12px;
+  --fontSize15: 13px;
+  --fontSize16: 14px;
+  --fontSize18: 16px;
+  --fontSize20: 18px;
+  --fontSize22: 20px;
+  --fontSize24: 22px;
+  --fontSize25: 23px;
+  --fontSize26: 24px;
+  --fontSize28: 26px;
+  --fontSize30: 28px;
+  --fontSize32: 30px;
+  --fontSize34: 32px;
+  --fontSize36: 34px;
+  --fontSize40: 38px;
+  --fontSize45: 43px;
+  --fontSize46: 44px;
+  --fontSize52: 50px;
+  --fontSize68: 66px;
+  --fontSize72: 70px;
+  --fontSize80: 78px;
+}
+.font_increase_1 {
+  --fontSize10: 11px;
+  --fontSize12: 13px;
+  --fontSize14: 15px;
+  --fontSize15: 16px;
+  --fontSize16: 17px;
+  --fontSize18: 19px;
+  --fontSize20: 21px;
+  --fontSize22: 23px;
+  --fontSize24: 25px;
+  --fontSize25: 26px;
+  --fontSize26: 27px;
+  --fontSize28: 29px;
+  --fontSize30: 31px;
+  --fontSize32: 33px;
+  --fontSize34: 35px;
+  --fontSize36: 37px;
+  --fontSize40: 41px;
+  --fontSize45: 46px;
+  --fontSize46: 47px;
+  --fontSize52: 53px;
+  --fontSize68: 69px;
+  --fontSize72: 73px;
+  --fontSize80: 81px;
+}
+.font_increase_2 {
+  --fontSize10: 12px;
+  --fontSize12: 14px;
+  --fontSize14: 16px;
+  --fontSize15: 17px;
+  --fontSize16: 18px;
+  --fontSize18: 20px;
+  --fontSize20: 22px;
+  --fontSize22: 24px;
+  --fontSize24: 26px;
+  --fontSize25: 27px;
+  --fontSize26: 28px;
+  --fontSize28: 30px;
+  --fontSize30: 32px;
+  --fontSize32: 34px;
+  --fontSize34: 36px;
+  --fontSize36: 38px;
+  --fontSize40: 42px;
+  --fontSize45: 47px;
+  --fontSize46: 48px;
+  --fontSize52: 54px;
+  --fontSize68: 70px;
+  --fontSize72: 74px;
+  --fontSize80: 82px;
+}

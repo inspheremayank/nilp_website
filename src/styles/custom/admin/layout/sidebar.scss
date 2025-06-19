@@ -1,0 +1,9 @@
+.admin_sidebar {
+    &__top {
+        @include flexbox;
+        min-height: 100px;
+        @include align-items(center);
+        @include justify-content(center);
+        border-bottom: 1px solid rgba(var(--baseWhite), 0.15);
+    }
+}

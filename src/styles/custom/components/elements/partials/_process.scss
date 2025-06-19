@@ -1,0 +1,203 @@
+.c-process {
+  &__link {
+    @include flexbox;
+    @include flex-direction(column, vertical);
+    @include align-items(center);
+  }
+  &__top {
+    @include flexbox;
+    @include flex-direction(column, vertical);
+    margin: 0 30px;
+    flex: 1;
+  }
+
+  &__count {
+    text-align: center;
+    font-size: $font52;
+    @include fontBase(var(--fontSemiBold));
+    color: var(--black);
+    margin-bottom: 10px;
+
+    @include mq(tablet) {
+      font-size: $font72;
+    }
+
+    @include mq(desktop-wide) {
+      font-size: $font72;
+    }
+  }
+  &__label {
+    font-size: $font16;
+    @include fontBase(var(--fontSemiBold));
+    color: var(--black);
+    text-align: center;
+    min-height: 40px;
+
+    @include mq(tablet) {
+      font-size: $font18;
+    }
+
+    @include mq(desktop-wide) {
+      font-size: $font22;
+      min-height: 80px;
+    }
+    
+  }
+
+  &__description {
+    font-size: $font16;
+    @include fontBase(var(--fontMedium));
+    color: var(--black);
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  &__bottom {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    &:before {
+      content: '';
+      background: url('/nilp/images/icons/icon_17.png');
+      width: 10px;
+      height: 88px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      @include translateX(-50%);
+      z-index: 10;
+    }
+    &_icon {
+      @include size(200px);
+      @include border-radius(100%);
+      background-color: var(--grey10);
+      @include flexbox;
+      -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+      -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+      transition: all 0.35s ease;
+    }
+
+    img {
+      position: absolute;
+      bottom: 92px;
+      left: 50%;
+      @include translateX(-50%);
+    }
+  }
+
+  .slick-track {
+    @include flexbox;
+    .slick-slide {
+      height: auto;
+      @include flexbox;
+      @include flex-direction(column, vertical);
+
+      > div {
+        @include flexbox;
+        flex: 1;
+      }
+      
+        &.slick-active {
+          .c-process__link {
+            .c-process__bottom_icon {
+              background-color: #fa8c37;
+              -webkit-box-shadow-color: 0px 0px 40px 0px
+                rgba(250, 140, 56, 0.75);
+              -moz-box-shadow: 0px 0px 40px 0px rgba(250, 140, 56, 0.75);
+              box-shadow: 0px 0px 40px 0px rgba(250, 140, 56, 0.75);
+
+              @include mq(desktop-min) {
+                background-color: var(--grey10);
+                -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+              }
+            }
+            @include mq(desktop-min) {
+              &.active {
+                .c-process__bottom_icon {
+                  background-color: #fa8c37;
+                  -webkit-box-shadow-color: 0px 0px 40px 0px
+                    rgba(250, 140, 56, 0.75);
+                  -moz-box-shadow: 0px 0px 40px 0px rgba(250, 140, 56, 0.75);
+                  box-shadow: 0px 0px 40px 0px rgba(250, 140, 56, 0.75);
+                }
+              }
+            }
+          }
+          + .slick-active {
+            .c-process__link {
+              .c-process__bottom_icon {
+                background-color: #1ca4d6;
+                  -webkit-box-shadow-color: 0px 0px 40px 0px
+                    rgba(28, 164, 214, 0.75);
+                  -moz-box-shadow: 0px 0px 40px 0px rgba(28, 164, 214, 0.75);
+                  box-shadow: 0px 0px 40px 0px rgba(28, 164, 214, 0.75);
+  
+                @include mq(desktop-min) {
+                  background-color: var(--grey10);
+                  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                }
+              }
+              &.active {
+                .c-process__bottom_icon {
+                  background-color: #1ca4d6;
+                  -webkit-box-shadow-color: 0px 0px 40px 0px
+                    rgba(28, 164, 214, 0.75);
+                  -moz-box-shadow: 0px 0px 40px 0px rgba(28, 164, 214, 0.75);
+                  box-shadow: 0px 0px 40px 0px rgba(28, 164, 214, 0.75);
+                }
+              }
+            }
+  
+            + .slick-active {
+              .c-process__link {
+                .c-process__bottom_icon {
+                  background-color: #e74078;
+                    -webkit-box-shadow-color: 0px 0px 40px 0px
+                      rgba(231, 64, 120, 0.75);
+                    -moz-box-shadow: 0px 0px 40px 0px rgba(231, 64, 120, 0.75);
+                    box-shadow: 0px 0px 40px 0px rgba(231, 64, 120, 0.75);
+    
+                  @include mq(desktop-min) {
+                    background-color: var(--grey10);
+                    -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                    -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0);
+                  }
+                }
+
+                &.active {
+                  .c-process__bottom_icon {
+                    background-color: #e74078;
+                    -webkit-box-shadow-color: 0px 0px 40px 0px
+                      rgba(231, 64, 120, 0.75);
+                    -moz-box-shadow: 0px 0px 40px 0px rgba(231, 64, 120, 0.75);
+                    box-shadow: 0px 0px 40px 0px rgba(231, 64, 120, 0.75);
+                  }
+                }
+              }
+  
+              + .slick-active {
+                .c-process__link {
+                  &.active {
+                    .c-process__bottom_icon {
+                      background-color: #c04aa0;
+                      -webkit-box-shadow-color: 0px 0px 40px 0px
+                        rgba(192, 74, 160, 0.75);
+                      -moz-box-shadow: 0px 0px 40px 0px rgba(192, 74, 160, 0.75);
+                      box-shadow: 0px 0px 40px 0px rgba(192, 74, 160, 0.75);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      
+    }
+  }
+}

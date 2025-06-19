@@ -1,0 +1,4 @@
+export const ERRORS = {
+    ERR_BAD_REQUEST: 400,
+    ERR_INTERNAL_SERVER: 500,
+}

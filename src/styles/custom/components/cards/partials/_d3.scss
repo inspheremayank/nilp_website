@@ -1,0 +1,12 @@
+.c-card {
+  $self: &;
+  &.d3 {
+    @include flexbox;
+    @include flex-direction(column, vertical);
+    @include align-items(center);
+    @include justify-content(center);
+    // border: 2px solid var(--grey4);
+    background-color: var(--white);
+    padding: 10px; //30px
+  }
+}

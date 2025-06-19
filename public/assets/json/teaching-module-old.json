@@ -1,0 +1,86 @@
+
+{
+    "title": "Teaching Learning Material - Worksheets/QABs/Model Test Papers",
+    "items": [
+      {
+        "name": "ULLAS (Concise Primer) - CNCL",
+        "icon": "assets/images/primer/praveshika.png",
+        "sub_items": [
+          {
+            "name": "कवर पृष्ठ",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/1_cover_page.pdf"
+          },
+          {
+            "name": "पाठ 1 - परिवार और पड़ोस",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/chapter_1.pdf"
+          },
+          {
+            "name": "पाठ 2 - बातचीत",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/chapter_2.pdf"
+          },
+          {
+            "name": "पाठ 3 - हमारा रहन-सहन",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/chapter_3.pdf"
+          },
+          {
+            "name": "पाठ 4 - हमारे आस-पास",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/chapter_4.pdf"
+          },
+          {
+            "name": "पाठ 5 - खानपान और सेहत",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/chapter_5.pdf"
+          },
+          {
+            "name": "पाठ 6 - मतदान",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/chapter_6.pdf"
+          },
+          {
+            "name": "पाठ 7 - कानूनी जानकारी",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/chapter_7.pdf"
+          },
+          {
+            "name": "किताब डाउनलोड करें",
+            "link": "https://ncert.nic.in/cncl/resources/concise_primer/hindi_cncl/ullas_concise_primer_complete.pdf"
+          },
+          {
+            "name": "MARGDARSHIKA FOR VOLUNTEER TEACHERS",
+            "link": "https://ncert.nic.in/cncl/margdarshika.php"
+          }
+          
+        ]
+      },
+      {
+        "name": "ULLAS (Concise Primer) - States & UT",
+        "icon": "assets/images/primer/praveshika.png",
+        "sub_items": [
+          {
+            "name": "ARUNACHAL PRADESH(ENGLISH)",
+            "link": "https://ncert.nic.in/cncl/resources/primers/from_states/arunachal_pradesh/english/ullas/_Arunachal%20%20Ullas%20PDF.pdf"
+          },
+          {
+            "name": "MIZORAM(MIZO)",
+            "link": "https://ncert.nic.in/cncl/resources/primers/from_states/mizoram/mizo/ullas/Concise%20Primer%20-%20ROMEI_Mizoram.pdf"
+          },
+          {
+            "name": "KARNATAKA",
+            "link": "https://ncert.nic.in/cncl/resources/primers/from_states/karnatka/kannada/ullas/ULLAS-Savi%20baraha.pdf"
+          },
+          {
+            "name": "TRIPURA",
+            "link": "https://ncert.nic.in/cncl/resources/primers/from_states/tripura/bengali/ullas/ULLAS%20BANGLA%20TRIPURA%20FINAL.pdf"
+          }
+          
+        ]
+      },
+      {
+        "name": "Worksheet",
+        "icon": "assets/images/primer/worksheet.png",
+        "link": "https://ncert.nic.in/cncl/worksheet.php"
+      },
+      {
+        "name": "Assessment & Evaluation",
+        "icon": "assets/images/primer/assesment.png",
+        "link": "https://ncert.nic.in/cncl/assessment.php"
+      }
+    ]
+  }

@@ -1,0 +1,43 @@
+.u-breadcrumb {
+  &.v2 {
+    @include flexbox;
+
+    li {
+      position: relative;
+      font-size: $font18;
+      @include flexbox;
+      @include align-items(center);
+
+      a {
+        color: var(--black3);
+        @include transition(all 0.35s ease);
+        font-size: $font18;
+
+        &:hover {
+          color: var(--themePrimary);
+        }
+      }
+      + li {
+        &:before {
+          content: '';
+          margin-left: 15px;
+          margin-right: 10px;
+          position: relative;
+          color: var(--themePrimaryColor);
+          background: var(--arrowIcon);
+          background-repeat: no-repeat;
+          display: inline-flex;
+          @include align-items(center);
+          height: 11px;
+          width: 10px;
+        }
+      }
+      &:last-child {
+        color: var(--themePrimaryColor);
+        a {
+          color: var(--themePrimaryColor);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+    "colors": {
+        "default": {
+            "theme_color": {
+                "primary": "#5AAA46",
+                "secondary": "#F5821E",
+                "tertiary": "#E5E5E6",
+                "quaternary": "#6D6E71",
+                "dark": "#6D6E71",
+                "theme_dark": "#414042",
+                "theme_dark3": "#636366",
+                "grey": "#47494e",
+                "grey2": "#E5E5E6",
+                "grey3": "#E5E5E6",
+                "grey4": "#D9D9D9",
+                "body": "#FFFFFF",
+                "border": "#A7A9AC",
+                "border2": "#5AAA46",
+                "border3": "#E5E5E6",
+                "border4": "#FFFFFF",
+                "border5": "#A6A8B4",
+                "theme_light": "#E5E5E6"
+            },
+            "text_color": {
+                "default": "#414042",
+                "dark": "#A7A9AC",
+                "light": "#FFFFFF",
+                "green": "#5AAA46",
+                "orange": "#F5821E"
+            }
+        },
+        "darkmode": {
+            "theme_color": {
+                "primary": "#000000",
+                "secondary": "#000000",
+                "tertiary": "#000000",
+                "quaternary": "#000000",
+                "dark": "#6D6E71",
+                "theme_dark": "#333333",
+                "theme_dark3": "#000000",
+                "grey": "#FFFF00",
+                "grey2": "#F4EFEB",
+                "grey3": "#E5E5E6",
+                "grey4": "#D9D9D9",
+                "body": "#FFFFFF",
+                "border": "#9A9A9A",
+                "border2": "#59AB40",
+                "border3": "#D9D9D9",
+                "border4": "#ffffff",
+                "border5": "#939598",
+                "theme_light": "#EFEFEF"
+            },
+            "text_color": {
+                "default": "#FFFF00",
+                "dark": "#FFFF00",
+                "light": "#FFFF00",
+                "green": "#FFFF00",
+                "orange": "#FFFF00"
+            }
+        }
+    },
+    "fonts": {
+        "font_family": {
+            "primary": "--font-primary",
+            "primary_type": "sans-serif",
+            "secondary": "--font-secondary",
+            "secondary_type": "sans-serif"
+        },
+        "font_size": {
+            "base": "16",
+            "scale": "1.250"
+        }
+    }
+}

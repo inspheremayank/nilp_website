@@ -1,0 +1,76 @@
+.c-innerBanner {
+  $self: &;
+  &.v2 {
+    // background: linear-gradient(60deg, #f07a0c80 0%, #39660066 100%);
+    // background: linear-gradient(60deg, #FFC086 80%, #A7E4BE 80%);
+
+    background: var(--linearGradientTheme5);
+    background-repeat: no-repeat;
+     background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+    padding-top: 150px;
+    margin-top: 70px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: url('/nilp/images/inner_banner_bg_left.png');
+      z-index: 1;
+      opacity: 0.1;
+      background-repeat: no-repeat;
+    }
+
+    &:after {
+      display: none;
+      right: 0;
+      left: auto;
+      background-position: right;
+      background-image: url('/nilp/images/inner_banner_bg_right.png');
+    }
+
+    @include mq(desktop-wide) {
+      &:before,
+      &:after {
+        width: calc(100% / 2);
+      }
+      &:after {
+        display: block;
+      }
+    }
+
+    @include mq('tablet') {
+      padding-bottom: 40px;
+      padding-top: 150px;
+    }
+    @include mq('tablet-max') {
+      padding-bottom: 80px;
+      padding-top: 150px;
+    }
+
+    #{$self} {
+      &_wrapper {
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        @include justify-content(center);
+        @include align-items(center);
+      }
+    }
+
+    &.empty_box {
+      padding-bottom: 0px !important;
+      background: var(--linearGradientTheme5);
+    }
+
+    .container {
+      z-index: 9;
+      position: relative;
+    }
+  }
+}

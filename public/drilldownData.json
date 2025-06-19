@@ -1,0 +1,763 @@
+[
+
+  {
+    "id": "vt_goa",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+      
+    ]
+  },
+  {
+    "id": "learner_goa",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_mp",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "learner_mp",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_up",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_up",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_karnataka",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_karnataka",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_nagaland",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_nagaland",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+
+  {
+    "id": "vt_jharkhand",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_jharkhand",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_delhi",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_delhi",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+
+  {
+    "id": "vt_bihar",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_bihar",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_bihar",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_bihar",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+
+  {
+    "id": "vt_lakshadweep",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_lakshadweep",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_andaman",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_andaman",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  
+
+  {
+    "id": "vt_assam",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_assam",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_wb",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_wb",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_puducherry",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_puducherry",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+
+  {
+    "id": "vt_daman",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_daman",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+
+
+  
+  {
+    "id": "vt_gujarat",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_gujarat",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  
+  {
+    "id": "vt_rajasthan",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_rajasthan",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  
+  {
+    "id": "vt_dadra",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_dadra",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  
+  {
+    "id": "vt_chhattisgarh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_chhattisgarh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  
+  {
+    "id": "vt_tamilnadu",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_tamilnadu",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+
+
+
+  {
+    "id": "vt_chandigarh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_chandigarh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_punjab",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_punjab",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_haryana",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_haryana",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  
+  {
+    "id": "vt_andhrapradesh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_andhrapradesh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "vt_maharashtra",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_maharashtra",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_hp",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_hp",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_meghalaya",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_meghalaya",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_kerala",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_kerala",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_telangana",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_telangana",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_mizoram",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_mizoram",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+  {
+    "id": "vt_tripura",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_tripura",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+
+  ,
+  {
+    "id": "vt_manipur",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_manipur",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+  ,
+  {
+    "id": "vt_arunachalpradesh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_arunachalpradesh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+  ,
+  {
+    "id": "vt_odisha",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_odisha",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+  ,
+  {
+    "id": "vt_jammu",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_jammu",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+  ,
+  {
+    "id": "vt_sikkim",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_sikkim",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+  ,
+  {
+    "id": "vt_uttarakhand",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_uttarakhand",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+  ,
+  {
+    "id": "vt_ladakh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  },
+
+  {
+    "id": "learner_ladakh",
+    "data": [
+      ["General", 2],
+      ["OBC", 1],
+      ["Minority", 1],
+      ["SC", 1]
+    ]
+  }
+]

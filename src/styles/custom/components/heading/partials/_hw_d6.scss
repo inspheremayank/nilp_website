@@ -1,0 +1,90 @@
+.hw {
+  $self: &;
+  &.d6 {
+    #{$self} {
+      &__title {
+        font-size: $font20;
+        @include fontBase(var(--fontBold), var(--font-secondary));
+        color: var(--themeTextSecondary);
+        margin-bottom: 20px;
+
+        @include mq(tablet) {
+          font-size: $font22;
+        }
+
+        @include mq(desktop-wide) {
+          font-size: $font22;
+        }
+
+        span {
+          font-size: $font14;
+          margin-top: 10px;
+          a {
+            color: var(--themePrimary);
+          }
+          a:hover {
+            color: var(--themeTextSecondary);
+          }
+        }
+      }
+      &__blocked {
+        display: block;
+        font-style: italic;
+        color: var(--black3);
+        @include fontBase(var(--fontSemiBold), var(--font-secondary));
+        font-size: $font16;
+        @include mq(tablet) {
+          font-size: $font18;
+        }
+
+        @include mq(desktop-wide) {
+          font-size: $font18;
+        }
+      }
+    }
+
+    &.semiBold {
+      #{$self} {
+        &__title {
+          @include fontBase(var(--fontSemiBold), var(--font-secondary));
+        }
+      }
+    }
+
+    &.regular {
+      #{$self} {
+        &__title {
+          @include fontBase(var(--fontRegular), var(--font-secondary));
+        }
+      }
+    }
+
+    &.reverse {
+      #{$self} {
+        &__title {
+          color: var(--white);
+        }
+      }
+    }
+
+    &.line-margin {
+      #{$self} {
+        &__title {
+          @include mq(desktop, max) {
+            text-align: center;
+            line-height: 1.1;
+          }
+        }
+      }
+    }
+
+    &.theme-color {
+      #{$self} {
+        &__title {
+          color: var(--themePrimary);
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

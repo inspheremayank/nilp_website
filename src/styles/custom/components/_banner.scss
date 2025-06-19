@@ -1,0 +1,259 @@
+.banner_wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: var(--linearGradientTheme3);
+  padding-top: 180px;
+  //margin-top: -92px;
+
+  > .container > .row > .col-12 {
+    position: relative;
+  }
+
+  .banner_wrapper_indiaImg + .slick-slider {
+    margin-bottom: 50px;
+    .col-12 {
+      @include flexbox;
+    }
+  }
+
+  @include mq('tablet') {
+    //margin-top: -110px;
+  }
+
+  @include mq('tablet-max') {
+    padding-top: 190px;
+    //margin-top: -110px;
+  }
+
+  &_container {
+    position: relative;
+    flex: 1;
+    @include flexbox;
+    @include flex-direction(column, vertical);
+    @include align-items(flex-start);
+    @include justify-content(center);
+  }
+
+  &_indiaImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 0;
+
+    img {
+      max-width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+    }
+  }
+
+  &__item {
+    @include flexbox;
+  }
+
+  &_image {
+    @include flexbox;
+    @include justify-content(center);
+    @include flex-direction(column, vertical);
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      border: 3px solid var(--grey);
+      @include border-radius(20px);
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &_content {
+    position: relative;
+    z-index: 10;
+    padding: 40px 0;
+
+    p {
+      font-size: $font18;
+      color: var(--themeTextTertiary);
+      margin: 20px 0 30px;
+      line-height: 1.6;
+
+      @include mq('tablet-max') {
+        margin: 40px 0 60px;
+      }
+    }
+  }
+  // &_wrapper {
+  //   z-index: 99;
+  //   position: relative;
+  // }
+}
+
+.banner_subWrap {
+  background-color: var(--grey9);
+  &__content {
+    display: none;
+    background: var(--grey9);
+
+    .slick-slider,
+    .slick-list {
+      height: 100%;
+    }
+
+    @include mq('tablet-max') {
+      display: block;
+    }
+  }
+
+  &__slides {
+    margin: 30px 0;
+    position: relative;
+    z-index: 11;
+
+    .slick-slider {
+      margin-top: 0;
+
+      @include mq('tablet-max') {
+        margin-top: -40px;
+      }
+    }
+
+    @include mq('tablet-max') {
+      margin: 0;
+    }
+  }
+
+  &__container {
+    display: flex !important;
+    @include justify-content(flex-end);
+    position: relative;
+    padding: 40px 0;
+
+    &:before {
+      content: '';
+      background-color: var(--themeDarkWhite);
+      width: calc(100% / 2);
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      display: block;
+      z-index: -1;
+
+      @include mq(desktop) {
+        width: calc(100% - 330px);
+      }
+    }
+  }
+
+  &__text {
+    width: calc(1320px / 2) !important;
+    @include flexbox;
+    @include align-items(center);
+
+    h1,
+    p {
+      flex: 1 1 100%;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      max-height: 100px;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      font-size: $font26;
+      @include fontBase(var(--fontBold), var(--font-primary));
+    }
+    p {
+      flex: 1 1 calc(100% - 50px);
+      font-size: $font16;
+      margin: 0 15px;
+      @include fontBase(var(--fontMedium), var(--font-primary));
+      max-height: 70px;
+    }
+  }
+
+  &__image {
+    display: flex !important;
+    @include justify-content(center);
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      //border: 3px solid var(--grey);
+      @include border-radius(12px);
+      cursor: pointer;
+
+      @include mq('tablet-max') {
+        width: calc(100% - 10px);
+        height: 220px;
+      }
+
+      @include mq('desktop-wide-max') {
+        width: 218px;
+        height: 220px;
+      }
+    }
+  }
+}
+
+.marquee_wrapper {
+  background: var(--linearGradientTheme1);
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+
+  &_icon {
+    display: none;
+
+    @include mq(tablet-max) {
+      @include flexbox;
+    }
+  }
+
+  &_container {
+    @include flexbox;
+    @include align-items(center);
+  }
+
+  &_content {
+    color: var(--white);
+    @include fontBase(var(--fontMedium), var(--font-primary));
+    font-size: $font18;
+
+    @include mq(tablet) {
+      font-size: $font22;
+    }
+
+    @include mq(desktop-min) {
+      font-size: $font24;
+    }
+  }
+
+  &_label {
+    color: var(--white);
+    @include fontBase(var(--fontBold), var(--font-primary));
+    font-size: $font24;
+    white-space: nowrap;
+    padding-right: 20px;
+    // background: linear-gradient(113deg, #2a720b 0%, #002f00 81%);
+
+    @include mq(tablet) {
+      font-size: $font30;
+    }
+
+    @include mq(desktop-min) {
+      font-size: $font34;
+    }
+  }
+
+  @include mq('tablet-max') {
+    padding: 30px 0 25px;
+    margin-top: -30px;
+  }
+}

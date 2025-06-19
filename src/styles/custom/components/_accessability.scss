@@ -1,0 +1,164 @@
+.accessibility_btns {
+  position: fixed;
+  // right: 40px;
+  // bottom: 40px;
+  right: 20px;
+    bottom: 75px;
+  z-index: 501;
+  @include flexbox;
+  background-color: var(--themePrimary);
+  overflow: hidden;
+  align-items: center;
+  padding: 10px 15px;
+  @include border-radius(40px);
+  height: 74px;
+
+  button {
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    border: none;
+    outline: none;
+    background-color: var(--themePrimary);
+
+    svg {
+      width: 32px;
+      flex: 1;
+    }
+
+    svg * {
+      stroke: var(--white);
+    }
+  }
+
+  &_hover {
+    color: var(--white);
+    font-size: $font18;
+    width: 0;
+    height: 28px;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 0.5s linear);
+    white-space: nowrap;
+  }
+
+  &:hover {
+    .accessibility_btns_hover {
+      width: 100%;
+      flex: 1;
+      opacity: 1;
+      visibility: visible;
+      margin-left: 10px;
+    }
+  }
+}
+
+.accessibility_slide {
+  transform: translate(0%, -50%);
+  transition: all 0.3s ease;
+  max-width: 90%;
+  width: 400px;
+  position: fixed;
+  right: -100%;
+  top: 50%;
+  z-index: 502;
+  height: 100%;
+  background: var(--whiteBg);
+
+  &_head {
+    padding: 1.5rem 1.75rem 1.25rem;
+    @include flexbox;
+    @include justify-content(space-between);
+    background-color: var(--themePrimaryBg);
+
+    h3 {
+      color: var(--white);
+      text-transform: uppercase;
+      font-size: $font18;
+      @include fontBase(var(--fontBold));
+      margin-bottom: 0;
+    }
+    button {
+      background-color: transparent;
+      outline: none;
+      border: none;
+    }
+  }
+
+  &_box {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-bottom: 1rem;
+    padding-top: 1.75rem;
+    &_head {
+      color: var(--themeTextSecondary);
+      font-size: $font16;
+      @include fontBase(var(--fontMedium));
+    }
+
+    &_actions {
+      margin-top: 0.75rem;
+
+      .action_btn {
+        height: 2rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--themeTextSecondary);
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        color: var(--themeTextSecondary);
+        @include fontBase(var(--fontMedium));
+        background-color: transparent;
+        + .action_btn {
+          margin-left: 0.75rem;
+        }
+      }
+    }
+  }
+
+  &.active {
+    right: 0;
+  }
+}
+
+.hamburger_lines {
+  height: 22px;
+  width: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &.active {
+    .line1 {
+      transform: rotate(45deg);
+    }
+    .line2 {
+      transform: scaleY(0);
+    }
+    .line3 {
+      transform: rotate(-45deg);
+    }
+  }
+}
