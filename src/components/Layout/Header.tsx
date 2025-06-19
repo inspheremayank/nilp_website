@@ -46,7 +46,7 @@ const Header = async () => {
 
   const headerMenu = response || [];
   const youtubeVideos = await fetchYouTubeVideos();
-
+  console.log(headerMenu);
   return (
     <>
       {headerMenu.length > 0 && (
