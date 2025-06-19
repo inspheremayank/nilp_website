@@ -48,9 +48,7 @@ export default async function RootLayout({
               >
                 <Accessibility />
                 {/* <Header /> */}
-                <ErrorBoundary>
                 {children}
-                </ErrorBoundary>
                 <Footer />
               </ThemeProvider>
             </AppContextProvider>
