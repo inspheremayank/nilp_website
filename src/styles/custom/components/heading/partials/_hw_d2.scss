@@ -1,0 +1,30 @@
+.hw {
+  $self: &;
+  &.d2 {
+    #{$self} {
+      &__title {
+        font-size: $font20;
+        @include fontBase(var(--fontBold), var(--font-primary));
+        color: var(--themeTextSecondary);
+        margin-bottom: 5px;
+        line-height: 1.4;
+
+        @include mq(tablet) {
+          font-size: $font24;
+        }
+
+        @include mq(desktop-wide) {
+          font-size: $font28;
+        }
+      }
+    }
+
+    &.reverse {
+      #{$self} {
+        &__title {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

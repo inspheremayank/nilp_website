@@ -1,0 +1,91 @@
+.tabbing_wrap {
+  $self: &;
+  .tabbing_wrap_content {
+    padding: 0 10px; // 0 20px
+  }
+
+  &.d1 {
+    border: 1px solid var(--grey1);
+    @include border-radius(15px);
+    overflow: hidden;
+    height: calc(100% - 20px);
+    margin-top: 20px;
+    @include flexbox;
+    @include flex-direction(column, vertical);
+
+    @include mq('tablet'){
+      height: calc(100% - 40px);
+    }
+
+    > ul {
+      @include flexbox;
+      @include justify-content(space-between);
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      background: var(--linearGradientTheme2);
+      height: 80px;
+
+      li {
+        margin: 4px;
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+        flex: 1;
+      }
+    }
+
+    #{$self} {
+      &_item {
+        flex: 1;
+        color: var(--white);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        display: block;
+        padding: 10px 28px;
+        white-space: nowrap;
+        @include border-radius(12px);
+        @include transition(all 0.3s ease);
+        @include fontBase(var(--fontMedium));
+        font-size: $font16;
+        flex: 1;
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        @include align-items(center);
+
+        @include mq(tablet) {
+          font-size: $font18;
+        }
+
+        @include mq(desktop-min) {
+          font-size: $font20;
+        }
+
+        &:hover,
+        &.active {
+          background-color: var(--whiteBg);
+          color: var(--themeTextSecondary);
+        }
+      }
+
+      &_content {
+        flex: 1 0 calc(100% - 80px);
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        &_item {
+          flex: 1;
+          @include flexbox;
+          @include flex-direction(column, vertical);
+          
+          &.hidden {
+            display: none !important;
+          }
+        }
+      }
+      .u-listView.d2{
+        @include flexbox;
+        @include flex-direction(column, vertical);
+      }
+    }
+  }
+}

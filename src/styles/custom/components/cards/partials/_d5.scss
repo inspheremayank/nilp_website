@@ -1,0 +1,24 @@
+.c-card {
+    $self: &;
+    &.d5 {
+      @include flexbox;
+      @include flex-direction(column, vertical);
+      border-radius: 13px;
+      background-color: var(--orange8);
+      padding: 30px;
+      height: 100%;
+    }
+
+    // .ratio-16x9 {
+    //     @include mq(tablet-max) {
+    //       --bs-aspect-ratio: 100%;
+    //     }
+    //     @include mq(desktop-wide) {
+    //       --bs-aspect-ratio: 75%;
+    //     }
+    //     @include mq(desktop-wide-max) {
+    //       --bs-aspect-ratio: 56.25%;
+    //     }
+    //   }
+    
+  }

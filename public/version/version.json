@@ -1,0 +1,13 @@
+{
+    "android": {
+        "latestVersion": "1.0.10",
+        "isCompulsory": true,
+        "updateAvailable": true
+    },
+
+    "ios": {
+        "latestVersion": "1.0.0",
+        "isCompulsory": true,
+        "updateAvailable": true
+    }
+}

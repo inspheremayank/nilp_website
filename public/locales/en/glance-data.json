@@ -1,0 +1,326 @@
+[
+  {
+    "name": "andaman and nicobar islands",
+    "learner": "11,858",
+    "vt": "1,386",
+    "passed": "NA",
+    "tagged_learner": "15",
+    "tagged_vt": "9",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "andhra pradesh",
+    "learner": "3,039,293",
+    "vt": "2,783,416",
+    "passed": "NA",
+    "tagged_learner": "17,161",
+    "tagged_vt": "1,889",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "arunachal pradesh",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "19,995",
+    "tagged_learner": "1",
+    "tagged_vt": "1",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "chandigarh",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "3,000",
+    "tagged_learner": "381",
+    "tagged_vt": "128",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "jharkhand",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "29,243",
+    "tagged_learner": "68,509",
+    "tagged_vt": "7,740",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "karnataka",
+    "learner": "333,553",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "150,388",
+    "tagged_vt": "23,650",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "kerala",
+    "learner": "91,012",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "1",
+    "tagged_vt": "1",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "ladakh",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "7,336",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "madhya pradesh",
+    "learner": "2,193,374",
+    "vt": "132,793",
+    "passed": "913,087",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "manipur",
+    "learner": "3,267",
+    "vt": "NA",
+    "passed": "5,024",
+    "tagged_learner": "1",
+    "tagged_vt": "1",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "meghalaya",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "1,287",
+    "tagged_learner": "3",
+    "tagged_vt": "3",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "odisha",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "36,297",
+    "tagged_learner": "49",
+    "tagged_vt": "3",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "punjab",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "9,304",
+    "tagged_learner": "52,389",
+    "tagged_vt": "14,946",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "tamil nadu",
+    "learner": "480,131",
+    "vt": "NA",
+    "passed": "528,511",
+    "tagged_learner": "111",
+    "tagged_vt": "29",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "daman and diu",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "uttarakhand",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "rajasthan",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "maharashtra",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "lakshadweep",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "bihar",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "gujarat",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "himachal pradesh",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "nagaland",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "delhi",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "assam",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "mizoram",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "west bengal",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "haryana",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "telangana",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "tripura",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "sikkim",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "chhattisgarh",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "jammu and kashmir",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "goa",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "uttar pradesh",
+    "learner": "NA",
+    "vt": "NA",
+    "passed": "NA",
+    "tagged_learner": "NA",
+    "tagged_vt": "NA",
+    "flnat_attended": "NA"
+  },
+  {
+    "name": "india",
+    "learner": "6,152,488",
+    "vt": "2,917,595",
+    "passed": "1,553,084",
+    "tagged_learner": "289,009",
+    "tagged_vt": "48,400",
+    "flnat_attended": "NA"
+  }
+]

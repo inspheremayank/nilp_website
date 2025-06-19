@@ -1,0 +1,230 @@
+[
+    {
+      "name": "india",
+      "Population": "72.98%",
+      "maleTarget": "80.88%",
+      "femaleTarget": "64.63%"
+    },
+    {
+      "name": "madhya pradesh",
+      "Population": "69.32%",
+      "maleTarget": "78.73%",
+      "femaleTarget": "59.24%"
+    },
+    {
+      "name": "uttar pradesh",
+      "Population": "67.68%",
+      "maleTarget": "77.28%",
+      "femaleTarget": "57.18%"
+    },
+    {
+      "name": "karnataka",
+      "Population": "75.36%",
+      "maleTarget": "82.47%",
+      "femaleTarget": "68.08%"
+    },
+    {
+      "name": "nagaland",
+      "Population": "79.55%",
+      "maleTarget": "82.75%",
+      "femaleTarget": "76.11%"
+    },
+    {
+      "name": "bihar",
+      "Population": "61.80%",
+      "maleTarget": "71.20%",
+      "femaleTarget": "51.50%"
+    },
+    {
+      "name": "lakshadweep",
+      "Population": "91.85%",
+      "maleTarget": "95.56%",
+      "femaleTarget": "87.95%"
+    },
+    {
+      "name": "andaman and nicobar islands",
+      "Population": "86.63%",
+      "maleTarget": "90.27%",
+      "femaleTarget": "82.43%"
+    },
+    {
+      "name": "assam",
+      "Population": "72.19%",
+      "maleTarget": "77.85%",
+      "femaleTarget": "66.27%"
+    },
+    {
+      "name": "west bengal",
+      "Population": "76.26%",
+      "maleTarget": "81.69%",
+      "femaleTarget": "70.54%"
+    },
+    {
+      "name": "puducherry",
+      "Population": "85.85%",
+      "maleTarget": "91.26%",
+      "femaleTarget": "80.67%"
+    },
+    {
+      "name": "daman and diu",
+      "Population": "87.10%",
+      "maleTarget": "91.54%",
+      "femaleTarget": "79.55%"
+    },
+    {
+      "name": "gujarat",
+      "Population": "78.03%",
+      "maleTarget": "85.75%",
+      "femaleTarget": "69.68%"
+    },
+    {
+      "name": "rajasthan",
+      "Population": "66.11%",
+      "maleTarget": "79.19%",
+      "femaleTarget": "52.12%"
+    },
+    {
+      "name": "the dadra and nagar haveli and daman and diu",
+      "Population": "76.24%",
+      "maleTarget": "85.17%",
+      "femaleTarget": "64.32%"
+    },
+    {
+      "name": "tamil nadu",
+      "Population": "80.09%",
+      "maleTarget": "86.77%",
+      "femaleTarget": "73.44%"
+    },
+    {
+      "name": "chandigarh",
+      "Population": "86.05%",
+      "maleTarget": "89.99%",
+      "femaleTarget": "81.19%"
+    },
+    {
+      "name": "punjab",
+      "Population": "75.84%",
+      "maleTarget": "80.44%",
+      "femaleTarget": "70.73%"
+    },
+    {
+      "name": "haryana",
+      "Population": "75.55%",
+      "maleTarget": "84.06%",
+      "femaleTarget": "65.94%"
+    },
+    {
+      "name": "andhra pradesh",
+      "Population": "67.02%",
+      "maleTarget": "74.88%",
+      "femaleTarget": "59.15%"
+    },
+    {
+      "name": "maharashtra",
+      "Population": "82.34%",
+      "maleTarget": "88.38%",
+      "femaleTarget": "75.87%"
+    },
+    {
+      "name": "himachal pradesh",
+      "Population": "82.80%",
+      "maleTarget": "89.53%",
+      "femaleTarget": "75.93%"
+    },
+    {
+      "name": "meghalaya",
+      "Population": "74.43%",
+      "maleTarget": "75.95%",
+      "femaleTarget": "72.89%"
+    },
+    {
+      "name": "kerala",
+      "Population": "94.00%",
+      "maleTarget": "96.11%",
+      "femaleTarget": "92.07%"
+    },
+    {
+      "name": "telangana",
+      "Population": "-",
+      "maleTarget": "-",
+      "femaleTarget": "-"
+    },
+    {
+      "name": "mizoram",
+      "Population": "91.33%",
+      "maleTarget": "93.35%",
+      "femaleTarget": "89.27%"
+    },
+    {
+      "name": "tripura",
+      "Population": "87.22%",
+      "maleTarget": "91.53%",
+      "femaleTarget": "82.73%"
+    },
+    {
+      "name": "chhattisgarh",
+      "Population": "70.28%",
+      "maleTarget": "80.27%",
+      "femaleTarget": "60.24%"
+    },
+    {
+      "name": "manipur",
+      "Population": "76.94%",
+      "maleTarget": "83.58%",
+      "femaleTarget": "70.26%"
+    },
+    {
+      "name": "arunachal pradesh",
+      "Population": "65.38%",
+      "maleTarget": "72.55%",
+      "femaleTarget": "57.70%"
+    },
+    {
+      "name": "jharkhand",
+      "Population": "66.41%",
+      "maleTarget": "76.84%",
+      "femaleTarget": "55.42%"
+    },
+    {
+      "name": "goa",
+      "Population": "88.70%",
+      "maleTarget": "92.65%",
+      "femaleTarget": "84.66%"
+    },
+    {
+      "name": "delhi",
+      "Population": "86.21%",
+      "maleTarget": "90.94%",
+      "femaleTarget": "80.76%"
+    },
+    {
+      "name": "odisha",
+      "Population": "72.87%",
+      "maleTarget": "81.59%",
+      "femaleTarget": "64.01%"
+    },
+    {
+      "name": "jammu and kashmir",
+      "Population": "67.16%",
+      "maleTarget": "76.75%",
+      "femaleTarget": "56.43%"
+    },
+    {
+      "name": "sikkim",
+      "Population": "81.42%",
+      "maleTarget": "86.55%",
+      "femaleTarget": "75.61%"
+    },
+    {
+      "name": "uttarakhand",
+      "Population": "78.82%",
+      "maleTarget": "87.40%",
+      "femaleTarget": "70.01%"
+    },
+    {
+      "name": "ladakh",
+      "Population": "-",
+      "maleTarget": "-",
+      "femaleTarget": "-"
+    }
+]

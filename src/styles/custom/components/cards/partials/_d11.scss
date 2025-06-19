@@ -1,0 +1,15 @@
+.c-card {
+    $self: &;
+  
+    &.d11 {
+      background-color: var(--whiteLight);
+      @include border-radius(15px);
+      padding: 20px;
+      position: relative;
+  
+      @include mq(tablet) {
+        padding: 20px 40px;
+      }
+    }
+  }
+  

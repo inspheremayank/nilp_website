@@ -1,0 +1,66 @@
+.c-card {
+  $self: &;
+  &.d13 {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(flex-end);
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    @include calc(height, '100% - 10px');
+    @include transition(all 0.3s ease);
+    color: var(--black2);
+    &.text-end{
+      justify-content: end !important;
+     
+    }
+    #{$self} {
+      &_content {
+        @include flexbox();
+        @include flex-direction(column, vertical);
+      }
+      &__img {
+        @include transition(all 0.3s ease);
+      }
+    }
+
+    span {
+      font-size: $font14;
+      min-height: 25px;
+    }
+    .title {
+      @include fontBase(var(--fontBold), var(--font-secondary));
+      line-height: 1.3;
+      padding-right: 35px;
+      font-size: $font18;
+    }
+
+    &:hover {
+      color: var(--primaryType1);
+      @include transition(all 0.3s ease);
+      #{$self} {
+        &__img {
+          svg, svg * {
+            fill: var(--primaryType1);
+            opacity: 1;
+            @include transition(all 0.3s ease);
+          }
+        }
+      }
+    }
+
+    &.second-hover:hover {
+      color: var(--orange9);
+
+      #{$self} {
+        &__img {
+          svg, svg * {
+            fill: var(--orange9);
+            opacity: 1;
+            @include transition(all 0.3s ease);
+          }
+        }
+      }
+    }
+  }
+}

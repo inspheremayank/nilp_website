@@ -1,0 +1,66 @@
+.u-listView {
+  $self: &;
+  &.d3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    #{$self} {
+      &_list {
+        @include flexbox;
+        @include align-items(center);
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        // @include mq(tablet) {
+        //   margin: 30px 0px;
+        //   height: calc(100% - 60px);
+        // }
+      }
+      &_item {
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        width: 100%;
+        border: 1px solid var(--grey7);
+        @include border-radius(10px);
+        padding: 20px;
+        background-color: var(--themeWhite);
+        @include box-shadow(0 4px 25px 0 rgba(var(--baseBlack), 0.09));
+        @include transition(all 0.35s ease);
+        height: 100%;
+
+        &:hover {
+          @include box-shadow(0 4px 80px 5px rgba(var(--baseBlack), 0.2));
+        }
+
+        &_top {
+          flex: 1;
+          @include flexbox;
+          @include align-items(center);
+        }
+        &_img {
+          @include size(80px);
+          display: inline-flex;
+
+          img {
+            @include size(100%);
+            object-fit: cover;
+            min-width: 80px;
+          }
+        }
+        &_text {
+          color: var(--themeTextSecondary);
+          padding: 0 20px;
+          @include fontBase(var(--fontMedium));
+          font-size: $font18;
+          @include mq(tablet) {
+            font-size: $font20;
+          }
+
+          @include mq(desktop-wide) {
+            font-size: $font20;
+          }
+        }
+      }
+    }
+  }
+}

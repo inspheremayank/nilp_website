@@ -1,0 +1,26 @@
+.c-boxContainer {
+  $self: &;
+  &.d8 {
+    &#{$self} {
+      &__topBorder {
+        padding-top: 30px;
+        border-top: 1px solid var(--grey8);
+      }
+    }
+    .hw__title {
+      color: var(--themePrimaryColor);
+    }
+  }
+  &.boxed {
+    @include border-radius(20px);
+    background-color: var(--whiteBlack);
+    padding: 32px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    @include box-shadow(0px 4px 50px 0px rgba(var(--baseBlack), 0.2));
+    
+    @include mq(tablet-wide) {
+      height: calc(100% - 60px);
+    }
+  }
+}

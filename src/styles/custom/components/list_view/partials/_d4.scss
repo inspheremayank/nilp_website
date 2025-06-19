@@ -1,0 +1,207 @@
+.u-listView {
+  $self: &;
+  &.d4 {
+    @include flexbox;
+    @include flex-direction(column, vertical);
+    flex: 1;
+    ul {
+      @include flexbox;
+      @include flex-direction(column, vertical);
+
+      @include mq(tablet-wide) {
+        @include flex-direction(row, horizontal);
+        flex: 1;
+      }
+
+      li {
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        @include align-items(center);
+        @include justify-content(center);
+        padding: 20px;
+        flex: 1;
+
+        &:nth-child(1) {
+          // background-color: #6dc5f8;
+          background-color: var(--primaryType3);
+        }
+
+        &:nth-child(2) {
+          // background-color: #7ed0ff;
+          background-color: var(--primaryType4);
+        }
+        &:nth-child(3) {
+          // background-color: #b4e2fb;
+          background-color: var(--primaryType5);
+        }
+
+        + li {
+          border-top: 1px solid var(--grey);
+
+          @include mq(tablet-wide) {
+            border-top: none;
+            border-left: 1px solid var(--grey);
+            // padding-left: 30px;
+            // margin-left: 30px;
+          }
+        }
+      }
+    }
+
+    #{$self} {
+      &_avatar {
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        @include align-items(center);
+        @include justify-content(center);
+        @include size(80px);
+        background-color: var(--grey);
+        @include border-radius(50%);
+        line-height: 1.6;
+        @include fontBase(var(--fontBold));
+        color: var(--themePrimaryBorder);
+        margin-bottom: 20px;
+        font-size: $font16;
+        border: 1px solid var(--white);
+
+        @include mq(tablet) {
+          font-size: $font18;
+        }
+
+        @include mq(desktop-min) {
+          font-size: $font18;
+        }
+      }
+      &_content {
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        @include align-items(center);
+        @include justify-content(center);
+        text-align: center;
+
+        &_box {
+          @include flexbox;
+          @include flex-direction(column, vertical);
+        }
+
+        &_title {
+          @include fontBase(var(--fontBold));
+          color: var(--themeTextSecondary);
+          font-size: $font16;
+          margin-bottom: 8px;
+
+          @include mq(tablet) {
+            font-size: $font18;
+          }
+
+          @include mq(desktop-min) {
+            font-size: $font18;
+          }
+        }
+
+        &_designation {
+          font-size: $font14;
+          @include fontBase(var(--fontSemiBold));
+          color: var(--black3);
+          margin-bottom: 25px;
+          @include mq(tablet) {
+            font-size: $font15;
+          }
+
+          @include mq(desktop-min) {
+            font-size: $font15;
+          }
+        }
+
+        &_contact {
+          @include flexbox;
+          @include flex-direction(row, horizontal);
+          @include align-items(center);
+          color: var(--black3);
+
+          span {
+            + span {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    &--breakup {
+      ul {
+        @include flexbox;
+        @include flex-direction(column, vertical);
+
+        @include mq(tablet-wide) {
+          @include flex-direction(column, vertical);
+        }
+
+        li {
+          @include align-items(normal);
+          border: none;
+          border: 1px solid var(--grey);
+          margin: 0;
+          margin-bottom: 20px;
+          margin-left: 0px;
+          @include flexbox;
+          @include flex-direction(column, vertical);
+
+          &:nth-child(1) {
+            background-color: transparent !important;
+          }
+
+          &:nth-child(2) {
+            background-color: transparent !important;
+          }
+          &:nth-child(3) {
+            background-color: transparent !important;
+          }
+
+          @include mq(tablet-wide) {
+            @include flex-direction(row, horizontal);
+          }
+          padding: 0;
+
+          + li {
+            border: none;
+            margin: 0;
+            margin-bottom: 20px;
+            border: 1px solid var(--grey);
+            padding: 0;
+          }
+
+          aside {
+            flex: 1 0;
+            padding: 20px 15px;
+            overflow: hidden;
+            border: 1px solid var(--white);
+
+            + aside {
+              flex: 4;
+              background-color: var(--grey);
+              @include flexbox;
+            }
+          }
+        }
+      }
+
+      #{$self} {
+        &_content {
+          @include align-items(flex-start);
+          @include justify-content(flex-start);
+          text-align: left;
+
+          @include mq(phablet) {
+            @include flex-direction(row, horizontal);
+            @include justify-content(space-between);
+          }
+          @include mq(tablet-wide) {
+            @include flex-direction(column, vertical);
+            @include justify-content(flex-start);
+          }
+        }
+      }
+    }
+  }
+}

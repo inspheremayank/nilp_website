@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "name": "Between(18-30)",
+    "male": 1,
+    "female": 1,
+    "transgender": 1
+  },
+  {
+    "id": "2",
+    "name": "Between(31-40)",
+    "male": 15,
+    "female": 67,
+    "transgender": 2
+  },
+  {
+    "id": "3",
+    "name": "Between(41-50)",
+    "male": 23,
+    "female": 33,
+    "transgender": 2
+  },
+  {
+    "id": "4",
+    "name": "Between(51-60)",
+    "male": 56,
+    "female": 25,
+    "transgender": 2
+  },
+  {
+    "id": "5",
+    "name": "Between(61-80)",
+    "male": 13,
+    "female": 20,
+    "transgender": 2
+  }
+]

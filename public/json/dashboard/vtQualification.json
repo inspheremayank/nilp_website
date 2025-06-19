@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Between(18-30)",
+    "Graduate": 6,
+    "HigherSecondary": 3,
+    "Other": 1,
+    "PostGraduate": 2,
+    "Secondary": 8
+  },
+  {
+    "id": "2",
+    "name": "Between(31-40)",
+    "Graduate": 6,
+    "HigherSecondary": 6,
+    "Other": 1,
+    "PostGraduate": 2,
+    "Secondary": 1
+  },
+  {
+    "id": "3",
+    "name": "Between(41-50)",
+    "Graduate": 3,
+    "HigherSecondary": 9,
+    "Other": 1,
+    "PostGraduate": 2,
+    "Secondary": 5
+  },
+  {
+    "id": "4",
+    "name": "Between(51-60)",
+    "Graduate": 3,
+    "HigherSecondary": 3,
+    "Other": 1,
+    "PostGraduate": 2,
+    "Secondary": 1
+  },
+  {
+    "id": "5",
+    "name": "Between(61-80)",
+    "Graduate": 7,
+    "HigherSecondary": 3,
+    "Other": 8,
+    "PostGraduate": 4,
+    "Secondary": 9
+  }
+]

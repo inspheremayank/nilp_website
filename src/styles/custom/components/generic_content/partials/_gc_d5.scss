@@ -1,0 +1,37 @@
+.gc {
+  $self: &;
+  &.d5 {
+    #{$self} {
+      &__content {
+        text-align: justify;
+        font-size: $font20;
+        line-height: 1.6;
+        @include fontBase(var(--fontRegular));
+        color: var(--themeTextSecondary);
+
+        @include mq(tablet) {
+          font-size: $font22;
+        }
+
+        @include mq(desktop-min) {
+          font-size: $font24;
+        }
+      }
+    }
+
+    &.reverse {
+      #{$self} {
+        &__content {
+          color: var(--white);
+        }
+      }
+    }
+    &.bold {
+      #{$self} {
+        &__content {
+          @include fontBase(var(--fontSemiBold));
+        }
+      }
+    }
+  }
+}

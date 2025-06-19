@@ -1,0 +1,60 @@
+.c-card {
+  $self: &;
+  &.d1 {
+    @include flexbox;
+    @include flex-direction(column, vertical);
+    @include box-shadow(0px 4px 20px 0px rgba(var(--baseBlack), 0.1));
+    background-color: var(--whiteBg);
+    min-height: 130px;
+
+    @include mq(desktop-wide) {
+      @include flex-direction(row, horizontal);
+      max-height: 352px;
+      overflow: hidden;
+
+      &.custom-max-height {
+        max-height: 360px;
+      }
+    }
+
+    aside {
+      @include flex(1 0);
+      max-width: 100%;
+      border: 1px solid var(--white);
+
+      iframe {
+        @include size(100%);
+        object-fit: cover;
+      }
+
+      @include mq(desktop-wide) {
+        max-width: 50%;
+      }
+
+      .ratio-16x9 {
+        @include mq(desktop-wide) {
+          --bs-aspect-ratio: 100%;
+        }
+        @include mq(desktop-wide) {
+          --bs-aspect-ratio: 75%;
+        }
+        @include mq(desktop-wide-max) {
+          --bs-aspect-ratio: 56.25%;
+        }
+      }
+    }
+
+    #{$self} {
+      &__container {
+        padding: 10px 30px 20px; 
+      }
+
+      &__image {
+        img {
+          object-fit: contain;
+          object-position: top;
+        }
+      }
+    }
+  }
+}

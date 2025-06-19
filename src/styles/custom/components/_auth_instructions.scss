@@ -1,0 +1,115 @@
+.bg-themeClr7 {
+  background: url(/newnilp/images/bg-theme1.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.two-factor-header {
+  @include flexbox;
+  @include flex-direction(column, vertical);
+  background-color: var(--white);
+  padding: 23px 33px;
+  height: auto;
+  @include mq('desktop-min') {
+    @include flexbox;
+    @include flex-direction(row, horizontal);
+    @include align-items(center);
+    height: 120px;
+    overflow: hidden;
+    border-top: 1px solid var(--themeClr1);
+  }
+  aside {
+    width: 100%;
+    text-align: center;
+    @include mq('desktop-min') {
+      width: 50%;
+      text-align: start;
+    }
+  }
+
+  aside + aside {
+    @include flexbox;
+    @include justify-content(center);
+    order: -1;
+    margin-bottom: 20px;
+
+    @include mq('desktop-min') {
+      @include justify-content(flex-end);
+      order: 1;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.two-factor-bannerSlide {
+  //   @include calc('height', '100vh - 120px');
+  @include flexbox;
+  @include flex-direction(column, vertical);
+  margin-bottom: 30px;
+
+  .title {
+    text-align: center;
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    background: #90d0ed;
+    @include border-radius(0 0 15px 15px);
+    padding: 10px 15px;
+    @include fontBase(var(--fontMedium));
+    font-size: $font22;
+    margin-bottom: 30px;
+  }
+  .slider-item-container {
+    background: #efefef;
+    padding: 20px;
+    overflow: hidden;
+    @include border-radius(20px);
+    &__image {
+      img {
+        @include border-radius(20px);
+      }
+    }
+    .hw__title {
+      margin-bottom: 15px;
+      padding-right: 120px;
+    }
+  }
+  .slick-slider {
+    position: relative;
+    .slick-arrow {
+      @include size(45px);
+      @include border-radius(45px);
+      min-width: 45px;
+      background: #fff;
+      transition: all 0.3s ease-in-out; 
+      z-index: 1;
+      &:hover {
+       transition: all 0.3s ease-in-out; 
+        background: #333;
+        &.slick-prev,
+        &.slick-next {
+          &:before {
+            color: #fff;
+           transition: all 0.3s ease-in-out; 
+          }
+        }
+      }
+      &.slick-prev,
+      &.slick-next {
+        top: 35px;
+        &:before {
+          color: #333;
+         transition: all 0.3s ease-in-out; 
+        }
+      }
+      &.slick-next {
+        right: 20px;
+      }
+      &.slick-prev {
+        right: 80px;
+        left: auto;
+      }
+    }
+  }
+}

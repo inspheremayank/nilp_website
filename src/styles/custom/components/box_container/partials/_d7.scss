@@ -1,0 +1,41 @@
+.c-boxContainer {
+  $self: &;
+  &.d7 {
+    background: var(--linearGradientTheme4);
+    position: relative;
+    padding-top: 20px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: calc(100% / 2);
+      height: 100%;
+      background: url('/nilp/images/inner_banner_bg_left.png');
+      z-index: 1;
+      opacity: 0.05;
+      filter: blur(1px);
+      background-repeat: no-repeat;
+    }
+
+    &:after {
+      top: auto;
+      bottom: 0;
+      right: 0;
+      left: auto;
+      background-position: bottom left;
+      transform: scaleX(-1);
+    }
+
+    .container {
+      position: relative;
+      z-index: 3;
+    }
+
+    // @include mq(desktop-min) {
+    //   padding-top: 30px;
+    // }
+  }
+}

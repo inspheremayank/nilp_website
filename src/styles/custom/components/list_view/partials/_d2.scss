@@ -1,0 +1,60 @@
+.u-listView {
+  $self: &;
+  &.d2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    > ul {
+      list-style-type: none;
+      overflow-y: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      &.u-size {
+        max-height: 292px;
+        padding-bottom: 0px;
+      }
+
+      @include mq(tablet-max) {
+        &.u-size {
+          max-height: 222px;
+          padding-bottom: 0px;
+        }
+      }
+      > li {
+        border: 1px solid var(--grey5);
+        background-color: var(--grey6);
+        @include border-radius(6px);
+        padding: 5px 15px; //20px 25px
+        margin-bottom: 15px;
+        @include flexbox;
+        @include flex-direction(column, vertical);
+        @include justify-content(center);
+
+        @include mq(tablet-max) {
+          @include flex-direction(row, horizontal);
+          @include align-items(center);
+          @include justify-content(space-between);
+        }
+
+        span {
+          font-size: $font16;
+          @include fontBase(var(--fontSemiBold));
+          color: var(--black3);
+          line-height: 1.3;
+
+          @include mq(tablet) {
+            font-size: $font18;
+          }
+
+          @include mq(desktop-min) {
+            font-size: $font20;
+          }
+        }
+      }
+      li:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
