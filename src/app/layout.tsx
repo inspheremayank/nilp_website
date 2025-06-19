@@ -38,7 +38,8 @@ export default async function RootLayout({
     <>
       <html lang={locale} className="light" style={{'colorScheme':'light'}} suppressHydrationWarning={true}>
         <body className="app-mainWrapper" suppressHydrationWarning={true}>
-          <NextIntlClientProvider messages={messages}>
+          {children}
+          {/* <NextIntlClientProvider messages={messages}>
             <AppContextProvider>
               <ThemeProvider
                 attribute="class"
@@ -54,7 +55,7 @@ export default async function RootLayout({
                 <Footer />
               </ThemeProvider>
             </AppContextProvider>
-          </NextIntlClientProvider>
+          </NextIntlClientProvider> */}
         </body>
       </html>
     </>

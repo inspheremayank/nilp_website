@@ -75,7 +75,7 @@ export default async function Page({ params }: any) {
   return (
     <>
       {/* {pageData.slug != 'home' && <InnerBanner pageData={pageData} />} */}
-      {/* <PageWrapper pageData={pageData} /> */}
+      <PageWrapper pageData={pageData} />
     </>
   );
 }
