@@ -29,6 +29,7 @@ async function getAPIRequest(data: string) {
       true,
       true
     );
+    console.log(response, 'getAPI Request'); // Optional: remove in production
     return response;
   } catch (err) {
     console.error('API Error:', err); // Optional: remove in production
@@ -39,6 +40,7 @@ async function getAPIRequest(data: string) {
 
 async function getData(params: any) {
   const dataPromise = getAPIRequest(params.pageSlug);
+  console.log(params.pageSlug, 'getData params'); // Optional: remove in production
   const response = await dataPromise;
   // if (response.status !== ) {
   //   if (response.gettingError == ERRORS.ERR_BAD_REQUEST) {
@@ -47,6 +49,8 @@ async function getData(params: any) {
   // } else {
   //   return response[0];
   // }
+
+  console.log(response, 'getData response'); // Optional: remove in production
 
   if(response.status == CONSTANTS.STATUS_FAILED) {
     throw notFound();
@@ -66,11 +70,12 @@ export async function generateMetadata({ params }: any) {
 }
 
 export default async function Page({ params }: any) {
+  console.log(params, 'Page params'); // Optional: remove in production
   const pageData = await getData(params);
   return (
     <>
-      {pageData.slug != 'home' && <InnerBanner pageData={pageData} />}
-      <PageWrapper pageData={pageData} />
+      {/* {pageData.slug != 'home' && <InnerBanner pageData={pageData} />} */}
+      {/* <PageWrapper pageData={pageData} /> */}
     </>
   );
 }

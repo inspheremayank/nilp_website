@@ -120,165 +120,165 @@ const AppContextProvider = ({ children }: { children: ReactNode }) => {
   const [youtubeVideo,setYouTubeVideos]=useState<any[]>([])
 
 
-  useEffect(() => {
-    const perRequiredRequest = async () => {
-      // getting header menu
-      const getHeaderMenu = await getRequestServerSide(
-        `${GET_MENU_ENDPOINT}?slug=${CONSTANTS.HEADER_MENU_SLUG}`
-      );
-      if (getHeaderMenu.length > 0) {
-        setHeaderMenu(getHeaderMenu);
-      }
-    };
-    perRequiredRequest();
+  // useEffect(() => {
+  //   const perRequiredRequest = async () => {
+  //     // getting header menu
+  //     const getHeaderMenu = await getRequestServerSide(
+  //       `${GET_MENU_ENDPOINT}?slug=${CONSTANTS.HEADER_MENU_SLUG}`
+  //     );
+  //     if (getHeaderMenu.length > 0) {
+  //       setHeaderMenu(getHeaderMenu);
+  //     }
+  //   };
+  //   perRequiredRequest();
 
-    const getDropdownInfo = async () => {
-      const dropdownInfo = await serverRequest(
-        null,
-        GET_STATES,
-        CONSTANTS.REQUEST_GET
-      );
-      if (dropdownInfo && dropdownInfo.status == CONSTANTS.STATUS_FAILED) {
-        setDropDownObj([]);
-      }
-      if (dropdownInfo && dropdownInfo.status == CONSTANTS.STATUS_SUCCESS) {
-        const decryptedData = JSON.parse(decrypt(dropdownInfo.data));
-        setDropDownObj(decryptedData);
-      }
-    };
+  //   const getDropdownInfo = async () => {
+  //     const dropdownInfo = await serverRequest(
+  //       null,
+  //       GET_STATES,
+  //       CONSTANTS.REQUEST_GET
+  //     );
+  //     if (dropdownInfo && dropdownInfo.status == CONSTANTS.STATUS_FAILED) {
+  //       setDropDownObj([]);
+  //     }
+  //     if (dropdownInfo && dropdownInfo.status == CONSTANTS.STATUS_SUCCESS) {
+  //       const decryptedData = JSON.parse(decrypt(dropdownInfo.data));
+  //       setDropDownObj(decryptedData);
+  //     }
+  //   };
 
-    const getVisitorsCount = async () => {
-      const count = await serverRequest(
-        null,
-        TOTAL_VISITORS,
-        CONSTANTS.REQUEST_GET
-      );
-      if (count && count.status == CONSTANTS.STATUS_FAILED) {
-        setVisitorsCount(0);
-      }
-      if (count && count.status == CONSTANTS.STATUS_SUCCESS) {
-        const decryptedData = decrypt(count.data);
-        setVisitorsCount(decryptedData);
-      }
-    };
+  //   const getVisitorsCount = async () => {
+  //     const count = await serverRequest(
+  //       null,
+  //       TOTAL_VISITORS,
+  //       CONSTANTS.REQUEST_GET
+  //     );
+  //     if (count && count.status == CONSTANTS.STATUS_FAILED) {
+  //       setVisitorsCount(0);
+  //     }
+  //     if (count && count.status == CONSTANTS.STATUS_SUCCESS) {
+  //       const decryptedData = decrypt(count.data);
+  //       setVisitorsCount(decryptedData);
+  //     }
+  //   };
 
-    getDropdownInfo();
-    getVisitorsCount();
+  //   getDropdownInfo();
+  //   getVisitorsCount();
 
-    AOS.init({
-      duration: 1500,
-      once: true,
-    });
-  }, []);
+  //   AOS.init({
+  //     duration: 1500,
+  //     once: true,
+  //   });
+  // }, []);
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const links = document.querySelectorAll('a');
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     const links = document.querySelectorAll('a');
 
-      const speakText = (text: any) => {
-        const speechSynthesis = window.speechSynthesis;
-        if (speechSynthesis.speaking) {
-          speechSynthesis.cancel();
-        }
-        const utterance = new SpeechSynthesisUtterance(text);
-        const voices = speechSynthesis.getVoices();
-        const playVoice = voices.find(
-          (voice) =>
-            voice.name == 'Tessa' || voice.name == 'Google UK English Female'
-        );
+  //     const speakText = (text: any) => {
+  //       const speechSynthesis = window.speechSynthesis;
+  //       if (speechSynthesis.speaking) {
+  //         speechSynthesis.cancel();
+  //       }
+  //       const utterance = new SpeechSynthesisUtterance(text);
+  //       const voices = speechSynthesis.getVoices();
+  //       const playVoice = voices.find(
+  //         (voice) =>
+  //           voice.name == 'Tessa' || voice.name == 'Google UK English Female'
+  //       );
 
-        if (playVoice) {
-          utterance.voice = playVoice;
-        }
-        speechSynthesis.speak(utterance);
-      };
+  //       if (playVoice) {
+  //         utterance.voice = playVoice;
+  //       }
+  //       speechSynthesis.speak(utterance);
+  //     };
 
-      const initializeSpeechSynthesis = () => {
-        const voices = window.speechSynthesis.getVoices();
-        voices.find(
-          (voice) =>
-            voice.name == 'Tessa' || voice.name == 'Google UK English Female'
-        );
-      };
+  //     const initializeSpeechSynthesis = () => {
+  //       const voices = window.speechSynthesis.getVoices();
+  //       voices.find(
+  //         (voice) =>
+  //           voice.name == 'Tessa' || voice.name == 'Google UK English Female'
+  //       );
+  //     };
 
-      // Wait for voices to be loaded
-      if (window.speechSynthesis.onvoiceschanged !== undefined) {
-        window.speechSynthesis.onvoiceschanged = initializeSpeechSynthesis;
-      }
+  //     // Wait for voices to be loaded
+  //     if (window.speechSynthesis.onvoiceschanged !== undefined) {
+  //       window.speechSynthesis.onvoiceschanged = initializeSpeechSynthesis;
+  //     }
 
-      initializeSpeechSynthesis();
+  //     initializeSpeechSynthesis();
 
-      const handleMouseEnter = (event: any) => {
-        if (window.speechSynthesis && audioState) {
-          speakText(event.currentTarget.innerText);
-        } else {
-          console.error('speechSynthesis is not available');
-        }
-      };
+  //     const handleMouseEnter = (event: any) => {
+  //       if (window.speechSynthesis && audioState) {
+  //         speakText(event.currentTarget.innerText);
+  //       } else {
+  //         console.error('speechSynthesis is not available');
+  //       }
+  //     };
 
-      const handleTextSelection = () => {
-        const selection = window.getSelection();
-        if (selection !== null) {
-          const text = selection.toString().trim();
-          if (text !== '' && text !== selectedText && audioState) {
-            setSelectedText(text);
-            speakText(text);
-          }
-        }
-      };
+  //     const handleTextSelection = () => {
+  //       const selection = window.getSelection();
+  //       if (selection !== null) {
+  //         const text = selection.toString().trim();
+  //         if (text !== '' && text !== selectedText && audioState) {
+  //           setSelectedText(text);
+  //           speakText(text);
+  //         }
+  //       }
+  //     };
 
-      const handleRange = (e: any) => {
-        const { target } = e;
-        const selection = window.getSelection();
-        if (target instanceof HTMLElement && audioState) {
-          target.classList.contains('form_grider_wrap_field')
-            ? ''
-            : selection?.removeAllRanges();
-        }
-      };
+  //     const handleRange = (e: any) => {
+  //       const { target } = e;
+  //       const selection = window.getSelection();
+  //       if (target instanceof HTMLElement && audioState) {
+  //         target.classList.contains('form_grider_wrap_field')
+  //           ? ''
+  //           : selection?.removeAllRanges();
+  //       }
+  //     };
 
-      const handleTouchEnd = () => {
-        const selection = window.getSelection();
-        if (
-          selection !== null &&
-          selection.toString().trim() !== '' &&
-          selection.toString().trim() !== selectedText &&
-          audioState
-        ) {
-          setSelectedText(selection.toString().trim());
-          speakText(selection.toString().trim());
-        }
-      };
+  //     const handleTouchEnd = () => {
+  //       const selection = window.getSelection();
+  //       if (
+  //         selection !== null &&
+  //         selection.toString().trim() !== '' &&
+  //         selection.toString().trim() !== selectedText &&
+  //         audioState
+  //       ) {
+  //         setSelectedText(selection.toString().trim());
+  //         speakText(selection.toString().trim());
+  //       }
+  //     };
 
-      if (document.readyState === 'complete' && audioState) {
-        links.forEach((a) => {
-          a.addEventListener('mouseenter', handleMouseEnter);
-        });
-        document.addEventListener('mouseup', handleTextSelection);
-        document.addEventListener('click', handleRange);
-        document.addEventListener('touchend', handleTouchEnd);
-      }
+  //     if (document.readyState === 'complete' && audioState) {
+  //       links.forEach((a) => {
+  //         a.addEventListener('mouseenter', handleMouseEnter);
+  //       });
+  //       document.addEventListener('mouseup', handleTextSelection);
+  //       document.addEventListener('click', handleRange);
+  //       document.addEventListener('touchend', handleTouchEnd);
+  //     }
 
-      return () => {
-        links.forEach((a) => {
-          a.removeEventListener('mouseenter', handleMouseEnter);
-        });
-        document.removeEventListener('mouseup', handleTextSelection);
-        document.removeEventListener('click', handleRange);
-        document.removeEventListener('touchend', handleTouchEnd);
-      };
-    }
-  }, [audioState, selectedText]);
+  //     return () => {
+  //       links.forEach((a) => {
+  //         a.removeEventListener('mouseenter', handleMouseEnter);
+  //       });
+  //       document.removeEventListener('mouseup', handleTextSelection);
+  //       document.removeEventListener('click', handleRange);
+  //       document.removeEventListener('touchend', handleTouchEnd);
+  //     };
+  //   }
+  // }, [audioState, selectedText]);
 
-  useEffect(() => {
-    const options = ageOptions();
-    setAgeOptionsState(options);
-  }, []);
+  // useEffect(() => {
+  //   const options = ageOptions();
+  //   setAgeOptionsState(options);
+  // }, []);
 
-  useEffect(() => {
-    const options = vtAgeOptions();
-    setvtAgeOptionsState(options);
-  }, []);
+  // useEffect(() => {
+  //   const options = vtAgeOptions();
+  //   setvtAgeOptionsState(options);
+  // }, []);
 
   const stateDropdown = useMemo(() => {
     if (dropDownObj) {
@@ -290,21 +290,21 @@ const AppContextProvider = ({ children }: { children: ReactNode }) => {
     return [];
   }, [dropDownObj]);
 
-  useEffect(() => {
-    const storedLocale = localStorage.getItem('locale') || 'en';
-    setLanguage(storedLocale);
+  // useEffect(() => {
+  //   const storedLocale = localStorage.getItem('locale') || 'en';
+  //   setLanguage(storedLocale);
 
-  }, [])
+  // }, [])
 
   ///////
 
-  useEffect(() => {
-  if (pathname === '/') {
-    setAlertModal(true);
-  } else {
-    setAlertModal(false); 
-  }
-}, [pathname]);
+//   useEffect(() => {
+//   if (pathname === '/') {
+//     setAlertModal(true);
+//   } else {
+//     setAlertModal(false); 
+//   }
+// }, [pathname]);
 
 const handleClose = () => {
   setAlertModal(false);
